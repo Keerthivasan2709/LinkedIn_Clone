@@ -212,3 +212,11 @@ body {
 .justify-content-center{
     justify-content: center;
 }
+.border-2{
+    border-radius: 7px;
+}
+.all-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
