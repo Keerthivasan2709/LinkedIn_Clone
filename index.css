@@ -345,6 +345,7 @@ body {
     position: fixed;
     width: 12%;
     z-index: 2;
+    top: 7%;
 }
 .m-auto{
    margin: 0px;
