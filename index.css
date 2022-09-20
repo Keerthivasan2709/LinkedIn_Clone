@@ -359,12 +359,12 @@ body {
     position: relative;
     top: 70px;
 }
-a{
-    text-decoration: none;
-}
 .mb-5{
     margin-bottom: 5px;
 }
 .hide{
     display: none;
+}
+.rm-underline{
+    text-decoration: none;
 }
