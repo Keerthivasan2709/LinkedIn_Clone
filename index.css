@@ -344,9 +344,7 @@ body {
 .profile-top{
     position: fixed;
     width: 12%;
-    top: 68px;
     z-index: 2;
-    right: 650px;
 }
 .m-auto{
    margin: 0px;

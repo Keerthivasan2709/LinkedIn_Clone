@@ -1,3 +1,5 @@
+var meOffset=Me.getBoundingClientRect();
+aboutMeSection.style.left=`${meOffset.left-200}px`
 window.onscroll = function (e) {
     if (window.pageYOffset > 360) {
         fixed.classList.add('fixed')
