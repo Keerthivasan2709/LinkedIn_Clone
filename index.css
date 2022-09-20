@@ -22,7 +22,9 @@ body {
 .navBar {
     background-color: white;
     width: 100%;
-   
+    position: fixed;
+    z-index: 1;
+    top: 0px;
 }
 .main_grid{
     display: grid;
@@ -129,9 +131,6 @@ body {
 .p-2{
     padding: 5px;
 }
-.w-100{
-    width: 100%;
-}
 .align-items-stretch{
     align-items: stretch;
 }
@@ -164,6 +163,9 @@ body {
 }
 .bold{
     font-weight: bold;
+}
+.semi-bold{
+    font-weight: 600;
 }
 .border-radius{
     border-radius: 10px;
@@ -322,4 +324,47 @@ body {
 }
 .m-0{
     margin: 0px;
+}
+.btn{
+    cursor: pointer;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 0;
+    top: 58px;
+    width: 15.5%;
+}
+.recent-fixed{
+    position: fixed;
+    z-index: 1;
+    width: 12.2%;
+    top: 62px;
+}
+.profile-top{
+    position: fixed;
+    width: 12%;
+    top: 68px;
+    z-index: 2;
+    right: 650px;
+}
+.m-auto{
+   margin: 0px;
+   width: 100% !important;
+}
+@media screen and (max-width:720px){
+    
+}
+.top{
+    position: relative;
+    top: 70px;
+}
+a{
+    text-decoration: none;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.hide{
+    display: none;
 }
