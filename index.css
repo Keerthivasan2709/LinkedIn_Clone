@@ -450,7 +450,7 @@ body {
 }
 
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:1020px) {
     .sm-hide {
         display: none;
     }
@@ -465,21 +465,6 @@ body {
 
     .sm-grid {
         display: flex;
-    }
-}
-
-@media screen and (max-width:912px) {
-    .sm-grid {
-        display: flex;
         flex-direction: column;
     }
-    .lg-hide{
-        display: none;
-    }
 }
-
-@media screen and (max-width:1038px) {
-    .lg-hide {
-        display: none;
-    }
-} 
