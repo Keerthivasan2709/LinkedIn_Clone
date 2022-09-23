@@ -455,7 +455,10 @@ body {
     padding: 10px;
     background-color: var(--white);
 }
-
+.icons{
+    width: 30px;
+    height: 30px;
+}
 @media screen and (max-width:1020px) {
     .sm-hide {
         display: none;
