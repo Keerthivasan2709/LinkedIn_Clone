@@ -233,6 +233,7 @@ body {
 
 .font-small {
     font-size: 14px;
+    color: var(--black);
 }
 
 .font-verysmall {
@@ -449,6 +450,11 @@ body {
     display: none;
 }
 
+.sm-show-footer {
+    display: none;
+    padding: 10px;
+    background-color: var(--white);
+}
 
 @media screen and (max-width:1020px) {
     .sm-hide {
@@ -457,6 +463,15 @@ body {
 
     .sm-show {
         display: block;
+    }
+
+    .sm-show-footer {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        width: 100%;
+        bottom: 0px;
+
     }
 
     .sm-img {
