@@ -444,26 +444,42 @@ body {
 .rm-underline {
     text-decoration: none;
 }
-.sm-show{
+
+.sm-show {
     display: none;
-}
-@media screen and (max-width:1038px) {
-  .lg-hide{
-    display: none;
-  }
 }
 
+
 @media screen and (max-width:550px) {
-  .sm-hide{
-    display: none;
-  }   
-  .sm-show{
-    display: block;
-  }
-  .sm-img{
-     max-width: 40px;
-  }
-  .sm-grid{
-    display: flex;
-  }
+    .sm-hide {
+        display: none;
+    }
+
+    .sm-show {
+        display: block;
+    }
+
+    .sm-img {
+        max-width: 40px;
+    }
+
+    .sm-grid {
+        display: flex;
+    }
 }
+
+@media screen and (max-width:912px) {
+    .sm-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .lg-hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1038px) {
+    .lg-hide {
+        display: none;
+    }
+} 

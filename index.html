@@ -13,16 +13,14 @@
 </head>
 
 <body>
-    <div class="navBar sm-hide main_grid">
+    <div class="navBar sm-grid main_grid">
         <div></div>
-        <div class="d-grid-cols links justify-items-start align-items-center">
-            <div>
-                <div class=" d-flex-rows gap-5 w-10">
-                    <img src="./assets/Icons/LinkedIn_Icon.svg" class="icon btn" alt="LinkedIn_Icon">
-                    <input class="search text_box" type="text" placeholder="&#xF002; Search">
-                </div>
+        <div class="sm-hide d-flex-rows justify-content-between">
+            <div class="d-flex-rows gap-5 w-10">
+                <img src="./assets/Icons/LinkedIn_Icon.svg" class="icon btn" alt="LinkedIn_Icon">
+                <input class="search text_box" type="text" placeholder="&#xF002; Search">
             </div>
-            <div class="d-flex-rows justify-content-between gap-20">
+            <div class="d-flex-rows w-100 justify-content-between">
                 <div class="d-flex-cols btn align-items-center">
                     <img src="./assets/Icons/Home.svg" class="icons" alt="Home">
                     <p>Home</p>
@@ -114,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="recent" class="recent bg-white border border-2   my-5">
+                <div id="recent" class="recent lg-hide bg-white border border-2   my-5">
                     <div class="d-flex-cols gap-20">
                         <div>
                             <div class="font-small">Recent</div>
@@ -933,7 +931,7 @@
                         <img src="./assets/Icons/Dropdown.svg" alt="">
                     </div>
                 </div>
-                <div id="fixed">
+                <div id="fixed lg-hide">
                     <div class="ads bg-white border border-2 mt-2 d-flex-cols align-items-center">
                         <div class="d-flex-rows w-100 justify-content-end align-items-center gap-10">
                             <div>
