@@ -22,15 +22,14 @@ window.addEventListener('scroll', () => {
     }
 
 })
-let counter=0;
-$(".btn-right-arrow").click(() => {
-    $(".features")[0].scrollBy(600, 0)
-    // checkCounter(counter);
 
+let scroll=window.innerHeight<768?300:600;
+
+
+$(".btn-right-arrow").click(() => {
+    $(".features")[0].scrollBy(scroll, 0)
 })
 
 $(".btn-left-arrow").click(() => {
-    $(".features")[0].scrollBy(-600, 0)
-    // counter--;
-    // checkCounter(counter)
+    $(".features")[0].scrollBy(-scroll, 0)
 })
