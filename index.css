@@ -425,6 +425,7 @@ body {
     position: absolute;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    padding: 20px;
 }
 
 .feature {
