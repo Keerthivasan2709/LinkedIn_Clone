@@ -25,11 +25,20 @@ $(document).ready(() => {
     })
     let width=$(".feature").outerWidth();
     console.log(width)
+    $('.btn-left-arrow').hide();
     $(".btn-right-arrow").click(() => {
         $(".features")[0].scrollBy(width*1, 0)
     })
 
     $(".btn-left-arrow").click(() => {
         $(".features")[0].scrollBy(-width*1, 0)
+    })
+    $('.features').scroll((e)=>{
+        if($('.features').scrollLeft()>50){
+            $('.btn-left-arrow').show();
+        }
+        else{
+            $('.btn-left-arrow').hide();   
+        }
     })
 });
