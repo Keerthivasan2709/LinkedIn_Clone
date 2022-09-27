@@ -1,30 +1,36 @@
-var meOffset=Me.getBoundingClientRect();
-console.log(meOffset);
-aboutMeSection.style.left=`${meOffset.x}px`
-window.onscroll = function () {
+$("#Me").click(() => {
+    console.log($("#Me"))
+    a = $("#Me")[0].getBoundingClientRect();
+    console.log(a);
+    $('#aboutMeSection').toggle()
+    $('#aboutMeSection')[0].style.left = `${a.x}px`
+});
+window.addEventListener('scroll', () => {
     if (window.pageYOffset > 360) {
-        console.log(window.pageYOffset);
-        fixed.classList.add('fixed')
+        $(".ads-container").addClass('fixed')
     }
     else if (window.pageYOffset < 360) {
-        fixed.classList.remove('fixed')
+        $(".ads-container").removeClass('fixed')
     }
-     if (window.pageYOffset > 455) {
-        recent.classList.add('recent-fixed')
+})
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 455) {
+        $("#recent").addClass('recent-fixed')
     }
     else if (window.pageYOffset < 455) {
-        recent.classList.remove('recent-fixed')
+        $("#recent").removeClass('recent-fixed')
     }
-}
-let state=false;
-Me.addEventListener("click",()=>{
-    console.log(state);
-    if(state){
-        aboutMeSection.classList.add("hide");
-        state=false;
-    }
-    else{
-        aboutMeSection.classList.remove("hide");
-        state=true;
-    }
+
+})
+let counter=0;
+$(".btn-right-arrow").click(() => {
+    $(".features")[0].scrollBy(600, 0)
+    // checkCounter(counter);
+
+})
+
+$(".btn-left-arrow").click(() => {
+    $(".features")[0].scrollBy(-600, 0)
+    // counter--;
+    // checkCounter(counter)
 })

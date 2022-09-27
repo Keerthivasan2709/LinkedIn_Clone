@@ -8,14 +8,15 @@
     <link rel="icon" href="./assets/Icons/LinkedIn_Icon.svg">
     <link rel="stylesheet" href="./index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <title>LinkedIn</title>
 </head>
 
 <body>
-    <div class="navBar sm-grid main_grid">
+    <div class="navBar sm-hide sm-grid main_grid" id="navBar">
         <div></div>
-        <div class="sm-hide d-flex-rows justify-content-between">
+        <div class="sm-hide d-flex-rows justify-content-between gap-20">
             <div class="d-flex-rows gap-5 w-10">
                 <img src="./assets/Icons/LinkedIn_Icon.svg" class="icon btn" alt="LinkedIn_Icon">
                 <input class="search text_box" type="text" placeholder="&#xF002; Search">
@@ -63,7 +64,7 @@
     </div>
 
     <!-- NavBar for small Devices -->
-    <div class="sm-show p-10 bg-white width-auto">
+    <div class="sm-show p-10 bg-white width-auto sm-navBar" id="navBarSM">
         <div class="d-flex-rows gap-20">
             <img src="./assets/Icons/man (1).png" class="sm-img" alt="ProfileIcon">
             <input class="search text_box" type="text" placeholder="&#xF002; Search">
@@ -179,421 +180,422 @@
                 </div>
 
                 <div class="container all-posts">
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts bg-white p-5 border border-2">
-                        <div class="d-flex-rows align-items-center">
-                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
-                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between align-items-center">
-                            <div class="d-flex-rows align-items-center gap-20">
-                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
-                                <div>
-                                    <h4 class="mx-1">Codingmart Technologies</h4>
-                                    <div class="font-light font-small">8,789 Followers</div>
-                                    <div class="d-flex-rows gap-5 mx-1">
-                                        <div class="font-light font-small">
-                                            2 days ago &bull;
-                                        </div>
-                                        <div>
-                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
-                                <img src="./assets/Icons/Add.svg" alt="">
-                                <h3>Follow</h3>
-                            </div>
-                        </div>
-                        <video class="video-style"
-                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
-                            autoplay controls></video>
-                        <div class="d-flex-rows align-items-center justify-content-between">
-                            <div class="d-flex-rows align-items-center">
-                                <div class="d-flex-rows">
-                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
-                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
-                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
-                                </div>
-                                <div class="font-light font-small">
-                                    Surya S and 10,129 Others...
-                                </div>
-                            </div>
-                            <div class="font-light font-small">
-                                704 Comments &bull; 268 Shares
-                            </div>
-                        </div>
-                        <div class="divider width-auto my-5"></div>
-                        <div class="d-flex-rows justify-content-between p-5">
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Like.svg" alt="Like">
-                                <div>Like</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Comment.svg" alt="Comment">
-                                <div>Comment</div>
-                            </div>
-                            <div
-                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
-                                <img src="./assets/Icons/Share.svg" alt="Share">
-                                <div>Share</div>
-                            </div>
-                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
-                                reaction-icon">
-                                <img src="./assets/Icons/send.svg" alt="Send">
-                                <div>Send</div>
-                            </div>
-                        </div>
-                    </div>
                     
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <video class="video-style" style="height: 400px;"
+                            src="https://dms.licdn.com/playlist/C5605AQE_PU-RwKSISw/mp4-720p-30fp-crf28/0/1664035975875?e=1664784000&v=beta&t=w6xPRXTpBOWuetI5w-uPvCXvPALyuECnkyknMG3O0m0"
+                            autoplay controls muted></video>
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <video class="video-style"
+                            src="https://dms.licdn.com/playlist/C5605AQE_PU-RwKSISw/mp4-720p-30fp-crf28/0/1664035975875?e=1664784000&v=beta&t=w6xPRXTpBOWuetI5w-uPvCXvPALyuECnkyknMG3O0m0"
+                            muted autoplay controls></video>
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <video class="video-style"
+                            src="https://dms.licdn.com/playlist/C5605AQE_PU-RwKSISw/mp4-720p-30fp-crf28/0/1664035975875?e=1664784000&v=beta&t=w6xPRXTpBOWuetI5w-uPvCXvPALyuECnkyknMG3O0m0"
+                            autoplay controls></video>
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <img style="width: 80%;height: 80%;"
+                            src="https://media-exp1.licdn.com/dms/image/C4D22AQH6jQ0uT2zGYA/feedshare-shrink_800/0/1663827284073?e=1666828800&v=beta&t=5wirTYwnOTh9FbGaq9xAmEwoufL5ggbjLa57BCFjK4A"
+                            alt="">
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <video class="video-style"
+                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
+                            autoplay controls></video>
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts bg-white p-5 border border-2">
+                        <div class="d-flex-rows align-items-center">
+                            <img src="./assets/Icons/man (1).png" class="profile-icon p-5" alt="picture1">
+                            <b>Surya S</b>&nbsp;<div class="font-light">celebrates this</div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between align-items-center">
+                            <div class="d-flex-rows align-items-center gap-20">
+                                <img src="./assets/Images/profile_1.jpeg" class="icon" alt="">
+                                <div>
+                                    <h4 class="mx-1">Codingmart Technologies</h4>
+                                    <div class="font-light font-small">8,789 Followers</div>
+                                    <div class="d-flex-rows gap-5 mx-1">
+                                        <div class="font-light font-small">
+                                            2 days ago &bull;
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Globle.svg" class="globe-icon" alt="Globe">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-color d-flex-rows gap-5 btn align-items-center">
+                                <img src="./assets/Icons/Add.svg" alt="">
+                                <h3>Follow</h3>
+                            </div>
+                        </div>
+                        <video class="video-style"
+                            src="https://dms.licdn.com/playlist/C5605AQGdfxh14eM9CA/mp4-720p-30fp-crf28/0/1663052539569?e=1663912800&v=beta&t=EWysbaQ_pkUg7hau7sR7Pa_zQw2YvqwxKvFCGb-qm4o"
+                            autoplay controls></video>
+                        <div class="d-flex-rows align-items-center justify-content-between">
+                            <div class="d-flex-rows align-items-center">
+                                <div class="d-flex-rows">
+                                    <img src="./assets/posts-reaction/Like.svg" class="reaction" alt="Like">
+                                    <img src="./assets/posts-reaction/Heart.svg" class="position reaction" alt="Heart">
+                                    <img src="./assets/posts-reaction/Smile.svg" class="position1 reaction" alt="Smile">
+                                </div>
+                                <div class="font-light font-small">
+                                    Surya S and 10,129 Others...
+                                </div>
+                            </div>
+                            <div class="font-light font-small">
+                                704 Comments &bull; 268 Shares
+                            </div>
+                        </div>
+                        <div class="divider width-auto my-5"></div>
+                        <div class="d-flex-rows justify-content-between p-5">
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Like.svg" alt="Like">
+                                <div>Like</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Comment.svg" alt="Comment">
+                                <div>Comment</div>
+                            </div>
+                            <div
+                                class="d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100 reaction-icon">
+                                <img src="./assets/Icons/Share.svg" alt="Share">
+                                <div>Share</div>
+                            </div>
+                            <div class="sm-hide d-flex-rows align-items-center justify-content-center gap-5 p-5 w-100
+                                reaction-icon">
+                                <img src="./assets/Icons/send.svg" alt="Send">
+                                <div>Send</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="sm-hide">
@@ -652,7 +654,7 @@
                         <img src="./assets/Icons/Dropdown.svg" alt="">
                     </div>
                 </div>
-                <div id="fixed lg-hide">
+                <div id="lg-hide" class="ads-container">
                     <div class="ads bg-white border border-2 mt-2 d-flex-cols align-items-center">
                         <div class="d-flex-rows w-100 justify-content-end align-items-center gap-10">
                             <div>
@@ -706,7 +708,7 @@
             <div style="height: 40px;">
                 <button class="btn follow w-100">View Profile</button>
             </div>
-            <div class="divider m-auto "></div>
+            <div class="divider m-auto my-5"></div>
             <h4>Account</h4>
             <div class="d-flex-cols gap-10">
                 <div class="d-flex-rows align-items-center gap-5">
